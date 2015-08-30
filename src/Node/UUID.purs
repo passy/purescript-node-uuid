@@ -14,7 +14,6 @@ module Node.UUID where
   foreign import data UUID :: *
   foreign import data UUIDEff :: !
 
-  foreign import uuid :: {}
   foreign import showuuid :: UUID -> String
   foreign import v1 :: forall eff. Eff (uuid :: UUIDEff | eff) UUID
   foreign import v4 :: forall eff. Eff (uuid :: UUIDEff | eff) UUID

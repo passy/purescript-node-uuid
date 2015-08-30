@@ -2,16 +2,7 @@
 
 // module Node.UUID
 
-
-var uuid;
-try {
-  require;
-  uuid = require('node-uuid');
-} catch (e) {
-  uuid = window.uuid;
-}
-
-exports.uuid = uuid;
+var uuid = require('node-uuid');
 
 exports.showuuid = function (ident) {
   return ident.toString();
